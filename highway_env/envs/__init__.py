@@ -8,3 +8,8 @@ from highway_env.envs.lane_keeping_env import *
 from highway_env.envs.u_turn_env import *
 from highway_env.envs.exit_env import *
 from highway_env.envs.racetrack_env import *
+
+register(
+    id='MA-intersection-v0',
+    entry_point='highway_env.envs:intersection_env:MultiAgentIntersectionEnv',
+)
